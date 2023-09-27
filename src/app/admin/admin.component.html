@@ -1,0 +1,14 @@
+<h1>PRIVILEGED AREA!</h1>
+
+<h2>You should only be here if you are authorized!!</h2>
+
+<h3>You will need to login before you can enter the privileged area.</h3>
+
+<h2>Admin</h2>
+<nav>
+  <a (click)="login()" routerLinkActive="active" ariaCurrentWhenActive="page">Login</a>
+  <a (click)="editCountry()" routerLinkActive="active" ariaCurrentWhenActive="page">EditCountry</a>
+</nav>
+
+<router-outlet></router-outlet>
+

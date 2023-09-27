@@ -1,0 +1,17 @@
+
+<div class="parent">
+    <div class="splitscreen">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="splitscreen">
+      <router-outlet name="detail"></router-outlet>
+      <div style="padding-top: 40px; width: 100%; margin-left: 40px;">
+          <router-outlet name="visited"></router-outlet>
+      </div>
+    </div>
+    <div class="splitscreen">
+        <div style="width: 100%; margin-left: 40px;">
+          <router-outlet name="privileged"></router-outlet>
+        </div>
+       </div>
+  </div>

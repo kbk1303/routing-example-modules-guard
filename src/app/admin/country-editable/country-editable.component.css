@@ -1,0 +1,34 @@
+.country {
+    list-style-type: none;
+    padding: 40;
+    margin-left: 60px;
+
+  }
+
+.country .detail {
+    color: black;
+    text-decoration: solid;
+    font-weight: bolder;
+    display: inline-block;
+    
+    background-color: #eee;
+    margin: .5rem .5rem .5rem 0;
+    padding: .5rem 0;
+    border-radius: 4px;
+}
+
+.detail .name {
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.detail .flag {
+    padding: .5em .6em;
+    background-color: #eee;
+    display:inline-block;
+    min-width: 60px;
+    text-align: center;
+    margin-right: .18em;
+    border-radius: 4px 0 0 4px;
+}

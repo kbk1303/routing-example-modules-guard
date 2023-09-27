@@ -1,0 +1,15 @@
+<h2>Countries</h2>
+    <div class="table headline">
+      <span class="hl-country">Country</span><span class="hl-flag">Flag</span><span class="hl-area">Area</span><span>Population</span>
+    </div>
+    <ul class="countries">
+      <li *ngFor="let country of countriesSubject$ | async">
+        <a [routerLink]="['../country', { outlets: { detail: [country.name] } }]">
+          <span class="badge">{{ country.name }}</span><span class="flag"><img [src]="'https://upload.wikimedia.org/wikipedia/commons/' + country.flag" class="mr-2" style="width: 20px"></span>
+          <span class="area">{{ country.area | number }}</span>
+          <span class="population"> {{country.population | number}}</span>
+        </a>
+      </li>
+    </ul>
+
+
